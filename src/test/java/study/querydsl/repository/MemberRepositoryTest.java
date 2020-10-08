@@ -59,8 +59,8 @@ class MemberRepositoryTest {
         condition.setAgeLoe(40);
         condition.setTeamName("teamB");
 
-//        List<MemberTeamDto> result = memberRepository.search(condition);
+        List<MemberTeamDto> result = memberRepository.search(condition);
 
-//        assertThat(result).extracting("username").containsExactly("member4");
+        assertThat(result).extracting("username").containsExactly("member4");
     }
 }
